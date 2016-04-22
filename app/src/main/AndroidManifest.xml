@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.near.chimerarevo" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".ChimeraRevoApplication"
+        android:allowBackup="true"
+        android:backupAgent=".backup.AppBackupAgentHelper"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppThemeTranslucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.PostContainerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="www.chimerarevo.com"
+                    android:scheme="http" />
+                <data
+                    android:host="chimerarevo.com"
+                    android:scheme="http" />
+                <data
+                    android:host="www.chimerarevo.com"
+                    android:scheme="https" />
+                <data
+                    android:host="chimerarevo.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.ProductActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.YoutubeActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activities.SearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.EasterEggActivity"
+            android:parentActivityName=".activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <activity android:name=".activities.TutorialActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:theme="@android:style/Theme" />
+
+        <activity android:name="com.startapp.android.publish.AppWallActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <receiver android:name=".receivers.ScreenReceiver" />
+
+        <receiver android:name=".receivers.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.NewsService" />
+
+        <receiver
+            android:name=".providers.PostsListWidgetProvider"
+            android:label="@string/widget_list_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.near.chimerarevo.providers.REFRESH_VIEWS_LIST" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/list_widget_provider" />
+        </receiver>
+
+        <receiver
+            android:name=".providers.PostsLRWidgetProvider"
+            android:label="@string/widget_lr_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.near.chimerarevo.providers.REFRESH_VIEWS_LR" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lr_widget_provider" />
+        </receiver>
+
+        <service
+            android:name=".services.ListWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+    </application>
+
+</manifest>

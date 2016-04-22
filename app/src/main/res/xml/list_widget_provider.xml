@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="180dp"
+    android:updatePeriodMillis="3600000"
+    android:previewImage="@drawable/cr_homelist_preview"
+    android:initialLayout="@layout/widget_list_layout"
+    android:resizeMode="horizontal|vertical" />

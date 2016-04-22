@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="action_settings">Impostazioni</string>
+    <string name="action_about">Info</string>
+    <string name="action_share">Condividi</string>
+    <string name="action_search">Ricerca</string>
+    <string name="action_refresh">Aggiorna</string>
+    <string name="action_read">Leggi</string>
+    <string name="action_newcomment">Nuovo Commento</string>
+    <string name="action_favorite">Aggiungi a Preferiti</string>
+    <string name="action_remove_favorite">Rimuovi dai Preferiti</string>
+    <string name="action_favoriteslist">I Miei Preferiti</string>
+    <string name="action_unlock_premium">Sblocca Premium</string>
+
+    <string name="drawer_open">Apri navigation drawer</string>
+    <string name="drawer_close">Chiudi navigation drawer</string>
+    
+    <string name="content_descr_drawer">Icona Drawer</string>
+    <string name="content_descr_general">Immagine</string>
+    
+    <string name="hint_search">Cerca in CR</string>
+    
+    <string name="error_connection_timeout">Timeout Connessione</string>
+    <string name="error_unknown_host">Host Sconosciuto</string>
+    <string name="error_occurred">Si e\' verificato un errore</string>
+    <string name="error_notavailable">N/D</string>
+    <string name="error_connection_na">Connessione Internet non disponibile</string>
+    <string name="error_value_notvalid">Il valore inserito non è valido</string>
+    <string name="error_field_required">Il campo non può essere vuoto</string>
+    <string name="error_player">E\' capitato un errore nell\'attivazione del player (%1$s)</string>
+    <string name="error_disqus">Disqus ha restituito un errore, ci scusiamo per il disagio.</string>
+    
+    <string name="text_loading">Caricamento&#8230;</string>
+    <string name="text_today">Oggi</string>
+    <string name="text_loadmore">Carica più Post</string>
+    <string name="text_info">Informazioni</string>
+    <string name="text_developer">Simone Renzo (simone201)</string>
+    <string name="text_general">Generali</string>
+    <string name="text_newfeed">Trovate nuove news! Aggiornando&#8230;</string>
+    <string name="text_categories_all">Tutte le categorie</string>
+    <string name="text_brands_all">Tutti le marche</string>
+    
+    <string name="text_customize">Personalizza</string>
+    <string name="justify_text_text">Giustifica Testo</string>
+    <string name="justify_text_summary">Abilitando si rimuove la formattazione del testo</string>
+    <string name="text_size_text">Dimensione Testo</string>
+    <string name="text_size_summary">Controlla la dimensione del font a piacimento</string>
+    <string name="text_imgs">Immagini</string>
+    <string name="load_imgs_text">Carica Immagini</string>
+    <string name="load_imgs_summary">Carica le immagini negli articoli</string>
+    <string name="load_vid_text">Carica Video</string>
+    <string name="load_vid_summary">Carica la preview dei video negli articoli</string>
+    <string name="gallery_num_text">Gallerie da Caricare</string>
+    <string name="gallery_num_summary">Il numero di gallerie da caricare in un articolo</string>
+    <string name="comments_reset_text">Elimina credenziali commenti</string>
+    <string name="comments_reset_summary">Login richiesto dopo questa azione</string>
+    <string name="comments_reset_toast">Dati eliminati con successo</string>
+    <string name="show_tutorial_title">Apri Tutorial</string>
+    <string name="show_tutorial_summary">Mostra di nuovo il tutorial di primo avvio</string>
+
+    <string name="text_gotocomments">Vai ai Commenti</string>
+    <string name="text_addcomment">Commenta</string>
+    <string name="text_replycomment">Rispondi a un Commento</string>
+    <string name="text_cancel">Annulla</string>
+    <string name="text_sendcomment">Invia</string>
+    <string name="text_close">Chiudi</string>
+    <string name="hint_comment_text">Testo del Commento</string>
+    <string name="text_comment_save">Ricorda i miei dati</string>
+    <string name="text_sending_comment">Sto inviando il commento&#8230;</string>
+    <string name="text_nocomments">Nessun commento&#8230;per ora</string>
+    <string name="text_textnotempty">Il commento non può essere vuoto!</string>
+    <string name="text_sentfromapp">Inviato da Chimera Revo per Android</string>
+    <string name="text_commentsent">Commento inviato con successo!</string>
+    <string name="text_login">Accesso in Corso&#8230;</string>
+    
+    <string name="text_notification">Notifiche &amp; Widget</string>
+    <string name="text_news_search_text">Cerca nuove news</string>
+    <string name="text_news_search_summary">Auto-aggiorna anche i widget</string>
+    <string name="text_notification_text">Abilita Notifiche</string>
+    <string name="text_notification_summary">Notifica all\'uscita di news</string>
+    <string name="text_notification_delay_text">Intervallo di Ricerca</string>
+    <string name="text_notification_delay_summary">Per cercare nuove news</string>
+    <string name="text_notification_vibrate_text">Vibrazione</string>
+    <string name="text_notification_sound_text">Suoneria</string>
+    <string name="text_notification_light_text">Luce LED</string>
+    <string name="text_notification_light_color_text">Colore del LED</string>
+    
+    <string name="text_newposts_summary">Nuove news trovate! Clicca per aprire l\'app</string>
+    <string name="text_open_app">Apri sul Telefono</string>
+    <string name="text_nofavorites">Nessun Preferito Trovato</string>
+    <string name="text_favorites_resetted">I preferiti sono stati cancellati a causa di un aggiornamento del database</string>
+    
+    <string name="text_report">Reporting</string>
+    <string name="analytics_text">Google Analytics</string>
+    <string name="analytics_summary">Abilita il report anonimo per aiutarci nello sviluppo</string>
+
+    <string name="text_previous">INDIETRO</string>
+    <string name="text_next">AVANTI</string>
+    <string name="text_continue">CONTINUA</string>
+    <string name="text_accept">ACCETTA</string>
+    <string name="text_decline">RIFIUTA</string>
+    <string name="text_begin">INIZIA</string>
+
+    <string name="about_version_title">Versione App</string>
+
+    <string name="text_premium_list">Stai per sbloccare:\n\n- Widgets dell\'app (Lista e Material)\n- Rimozione pubblicità dall\'app\n- Rimozione caricamento all\'avvio\n- Un grande aiuto nello sviluppo futuro :)</string>
+    
+</resources>

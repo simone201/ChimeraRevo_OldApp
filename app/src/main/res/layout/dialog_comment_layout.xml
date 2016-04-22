@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <EditText
+	        android:id="@+id/comment_edittext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:ems="12"
+	        android:inputType="textMultiLine"
+            android:minLines="3"
+	        android:maxLines="10"
+            android:scrollbars="vertical"
+	        android:hint="@string/hint_comment_text" >
+	        
+	        <requestFocus />
+	    </EditText>
+	    
+	</RelativeLayout>
+</ScrollView>

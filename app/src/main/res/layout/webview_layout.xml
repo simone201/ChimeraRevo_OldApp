@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/progressContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin" >
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            xmlns:wheel="http://schemas.android.com/apk/res-auto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            wheel:matProg_barColor="@color/colorPrimaryDark"
+            wheel:matProg_progressIndeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/text_loading"
+            android:paddingTop="4dip"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-light" />
+
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/webViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:clipToPadding="false" />
+
+    </FrameLayout>
+    
+</FrameLayout>

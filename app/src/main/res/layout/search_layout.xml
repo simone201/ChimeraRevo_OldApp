@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="90dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipToPadding="false" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/search_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        card_view:cardElevation="7dp"
+        card_view:contentPadding="8dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/search_btn"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_action_search"
+                app:cb_color="@color/blue_light"
+                app:cb_pressedRingWidth="3dp" />
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/search_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/search_btn"
+                android:layout_toStartOf="@+id/search_btn"
+                android:ems="16"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:singleLine="true"
+                android:hint="@string/hint_search" >
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/floating_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_add_page"
+        fab:fab_colorNormal="@color/blue_dark"
+        fab:fab_colorPressed="@color/blue_light"
+        fab:fab_colorRipple="@color/blue_light" />
+    
+</FrameLayout>

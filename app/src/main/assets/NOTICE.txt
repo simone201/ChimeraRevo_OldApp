@@ -1,0 +1,23 @@
+Chimera Revo for Android
+Copyright 2013-2015 Simone Renzo
+
+This product includes software developed at
+Google Inc. (https://code.google.com/p/google-gson/),
+The Apache Software Foundation (http://www.apache.org/),
+Jonathan Hedley (http://jsoup.org/),
+Sergey Tarasevich (https://github.com/nostra13/Android-Universal-Image-Loader),
+readyState Software Ltd (https://github.com/jgilfelt/SystemBarTint),
+Oleksandr Melnykov (https://github.com/makovkastar/FloatingActionButton),
+Henning Dodenhof (https://github.com/hdodenhof/CircleImageView),
+Lewis Deane (https://github.com/lewisjdeane/L-Dialogs),
+William Mora (https://github.com/nispok/snackbar),
+James Smith (https://github.com/loopj/android-async-http),
+Markus Hi (https://github.com/markushi/android-circlebutton),
+Flavio Faria (https://github.com/flavioarfaria/KenBurnsView),
+Jake Wharton (https://github.com/JakeWharton/Android-ViewPagerIndicator),
+Mike Penz (https://github.com/mikepenz/AboutLibraries),
+kolavar (https://github.com/kolavar/android-support-v4-preferencefragment),
+pnikosis (https://github.com/pnikosis/materialish-progress),
+Square (https://github.com/square/okhttp).
+
+Portions of code were developed by The Android Open Source Project and Google Inc. at Mountain View (CA).

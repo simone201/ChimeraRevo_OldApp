@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_color_def">#1D1D1D</color>
+    <color name="dark_gray_pressed">#373E44</color>
+    <color name="prod_title_color">#1691B3</color>
+
+    <color name="drawer_child_color">#343434</color>
+    <color name="drawer_child_pressed_color">#4A4A4A</color>
+
+    <color name="colorPrimary">@color/red_light</color>
+    <color name="colorPrimaryDark">@color/red_dark</color>
+
+    <color name="blue_light">#2196F3</color>
+    <color name="blue_dark">#1976d2</color>
+    <color name="red_light">#F44336</color>
+    <color name="red_dark">#D32F2F</color>
+    <color name="green_light">#4CAF50</color>
+    <color name="green_dark">#388E3C</color>
+    <color name="orange_light">#FF9800</color>
+    <color name="orange_dark">#F57C00</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

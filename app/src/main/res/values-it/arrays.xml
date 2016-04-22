@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="menu_items_titles">
+        <item>Home</item>
+        <item>Categorie</item>
+        <item>Recensioni</item>
+        <item>Video</item>
+        <item>Schede Tecniche</item>
+    </array>
+
+    <array name="menu_categories_titles">
+        <item>Android</item>
+        <item>Apple</item>
+        <item>Giochi</item>
+        <item>Hardware</item>
+        <item>Internet</item>
+        <item>Linux</item>
+        <item>Smartphone</item>
+        <item>Tablet</item>
+        <item>Windows</item>
+    </array>
+    
+    <string-array name="settings_notification_items">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 ora</item>
+        <item>2 ore</item>
+        <item>3 ore</item>
+        <item>6 ore</item>
+        <item>12 ore</item>
+        <item>24 ore</item>
+    </string-array>
+
+    <string-array name="settings_notification_led_color_items">
+        <item>Blu</item>
+        <item>Ciano</item>
+        <item>Verde</item>
+        <item>Magenta</item>
+        <item>Rosso</item>
+        <item>Bianco</item>
+        <item>Giallo</item>
+    </string-array>
+
+</resources>

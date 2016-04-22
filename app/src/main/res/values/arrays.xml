@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="menu_items_titles">
+        <item>Home</item>
+        <item>Categories</item>
+        <item>Reviews</item>
+        <item>Videos</item>
+        <item>Datasheets</item>
+    </array>
+
+    <array name="menu_categories_titles">
+        <item>Android</item>
+        <item>Apple</item>
+        <item>Games</item>
+        <item>Hardware</item>
+        <item>Internet</item>
+        <item>Linux</item>
+        <item>Smartphone</item>
+        <item>Tablet</item>
+        <item>Windows</item>
+    </array>
+
+    <array name="menu_categories_titles_italian">
+        <item>Android</item>
+        <item>Apple</item>
+        <item>Giochi</item>
+        <item>Hardware</item>
+        <item>Internet</item>
+        <item>Linux</item>
+        <item>Smartphone</item>
+        <item>Tablet</item>
+        <item>Windows</item>
+    </array>
+
+    <string-array name="settings_notification_items">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 hr</item>
+        <item>2 hrs</item>
+        <item>3 hrs</item>
+        <item>6 hrs</item>
+        <item>12 hrs</item>
+        <item>24 hrs</item>
+    </string-array>
+    
+     <string-array name="settings_notification_delay_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="settings_notification_led_color_items">
+        <item>Blue</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Magenta</item>
+        <item>Red</item>
+        <item>White</item>
+        <item>Yellow</item>
+    </string-array>
+
+    <string-array name="settings_notification_led_color_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <array name="categories_colors">
+        <item>#0A8F08</item>
+        <item>#9E9E9E</item>
+        <item>#D01716</item>
+        <item>#5E35B1</item>
+        <item>#455EDE</item>
+        <item>#00897B</item>
+        <item>#EF6C00</item>
+        <item>#F9A825</item>
+        <item>#283593</item>
+    </array>
+
+    <array name="categories_colors_dark">
+        <item>#087206</item>
+        <item>#7E7E7E</item>
+        <item>#A61212</item>
+        <item>#4B2A8E</item>
+        <item>#374BB2</item>
+        <item>#006E62</item>
+        <item>#BF5600</item>
+        <item>#C7861E</item>
+        <item>#202A76</item>
+    </array>
+
+</resources>

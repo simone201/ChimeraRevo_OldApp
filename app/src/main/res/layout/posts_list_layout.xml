@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" >
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/header_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/content_descr_general" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:background="@drawable/toolbar_background" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/header_img"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#801D1D1D"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipToPadding="false" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        xmlns:wheel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading_bar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        wheel:matProg_barColor="@color/colorPrimaryDark"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/floating_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_add_page"
+        fab:fab_colorNormal="@color/blue_dark"
+        fab:fab_colorPressed="@color/blue_light"
+        fab:fab_colorRipple="@color/blue_light" />
+
+</FrameLayout>

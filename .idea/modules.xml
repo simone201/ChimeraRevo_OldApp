@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChimeraRevo.iml" filepath="$PROJECT_DIR$/ChimeraRevo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeRefreshLayoutOverlay/SwipeRefreshLayoutOverlay.iml" filepath="$PROJECT_DIR$/SwipeRefreshLayoutOverlay/SwipeRefreshLayoutOverlay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldialogs/ldialogs.iml" filepath="$PROJECT_DIR$/ldialogs/ldialogs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support-v4-preferencefragment-1.0.0/support-v4-preferencefragment-1.0.0.iml" filepath="$PROJECT_DIR$/support-v4-preferencefragment-1.0.0/support-v4-preferencefragment-1.0.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerindicator-2.4.1/viewpagerindicator-2.4.1.iml" filepath="$PROJECT_DIR$/viewpagerindicator-2.4.1/viewpagerindicator-2.4.1.iml" />
+    </modules>
+  </component>
+</project>

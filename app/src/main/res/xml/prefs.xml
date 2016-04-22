@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:near="http://schemas.android.com/apk/res/com.near.chimerarevo"
+        android:title="@string/action_settings" >
+        
+    <PreferenceCategory
+            android:title="@string/text_customize" >
+
+        <Preference
+            android:key="comments_reset_pref"
+            android:title="@string/comments_reset_text"
+            android:summary="@string/comments_reset_summary" />
+
+        <Preference
+            android:key="show_tutorial_pref"
+            android:title="@string/show_tutorial_title"
+            android:summary="@string/show_tutorial_summary" />
+    	
+        <com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="justify_text_pref"
+            android:defaultValue="false"
+            android:title="@string/justify_text_text"
+            android:summary="@string/justify_text_summary" />
+        
+        <com.near.chimerarevo.preference.SeekBarPreference
+            android:key="text_size_pref"
+            android:title="@string/text_size_text"
+            android:summary="@string/text_size_summary"
+            android:persistent="true"
+            android:defaultValue="6"
+            near:minValue="0"
+			near:maxValue="20" />
+        
+    </PreferenceCategory>
+     
+	<PreferenceCategory
+            android:title="@string/text_notification" >
+
+        <com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="news_search_pref"
+            android:defaultValue="true"
+            android:title="@string/text_news_search_text"
+            android:summary="@string/text_news_search_summary" />
+
+        <ListPreference
+            android:key="notification_delay_pref"
+            android:title="@string/text_notification_delay_text"
+            android:summary="@string/text_notification_delay_summary"
+            android:entries="@array/settings_notification_items"
+            android:entryValues="@array/settings_notification_delay_values"
+            android:defaultValue="4"
+            android:dependency="news_search_pref" />
+
+        <com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="notification_pref"
+            android:defaultValue="true"
+            android:title="@string/text_notification_text"
+            android:summary="@string/text_notification_summary"
+            android:dependency="news_search_pref" />
+    	
+    	<com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="notification_vibrate_pref"
+            android:defaultValue="true"
+            android:title="@string/text_notification_vibrate_text"
+            android:dependency="notification_pref" />
+    	
+    	<com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="notification_sound_pref"
+            android:defaultValue="true"
+            android:title="@string/text_notification_sound_text"
+            android:dependency="notification_pref" />
+    	
+    	<com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="notification_light_pref"
+            android:defaultValue="true"
+            android:title="@string/text_notification_light_text"
+            android:dependency="notification_pref" />
+
+        <ListPreference
+            android:key="notification_light_color_pref"
+            android:title="@string/text_notification_light_color_text"
+            android:entries="@array/settings_notification_led_color_items"
+            android:entryValues="@array/settings_notification_led_color_values"
+            android:defaultValue="4"
+            android:dependency="notification_light_pref" />
+        
+   	</PreferenceCategory>
+        
+    <PreferenceCategory
+            android:title="@string/text_imgs" >
+    
+        <com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="load_imgs_pref"
+            android:defaultValue="true"
+            android:title="@string/load_imgs_text"
+            android:summary="@string/load_imgs_summary" />
+        
+        <com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="load_vid_pref"
+            android:defaultValue="true"
+            android:title="@string/load_vid_text"
+            android:summary="@string/load_vid_summary" />
+        
+        <EditTextPreference
+            android:key="gallery_num_pref"
+            android:inputType="number"
+            android:defaultValue="20"
+            android:title="@string/gallery_num_text"
+            android:summary="@string/gallery_num_summary" />
+        
+   	</PreferenceCategory>
+    
+    <PreferenceCategory
+            android:title="@string/text_report" >
+        
+        <com.near.chimerarevo.preference.CustomSwitchPreference
+            android:key="analytics_pref"
+            android:defaultValue="true"
+            android:title="@string/analytics_text"
+            android:summary="@string/analytics_summary" />
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>
